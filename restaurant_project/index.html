@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epicurean Haven</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -15,38 +15,47 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
             </ul>
         </nav>
     </header>
     <section id="home">
         <h2>Discover the Taste of Joy</h2>
         <p>At Epicurean Haven, we serve the finest dishes crafted with love and passion.</p>
-        <img src="https://www.franciscosegarra.com/wp-content/uploads/2022/03/restaurant-decoration.jpg" alt="Restaurant Interior" class="banner-image">
+        <img src="Images/restaurant_decoration.jpg" alt="Restaurant Interior" class="banner-image">
     </section>
     <section id="menu">
         <h2>Our Menu</h2>
         <ul>
             <li>
-                <img src="https://static.toiimg.com/photo/56868564.cms" alt="Margherita Pizza" class="menu-image">
-                Margherita Pizza
+                <img src="Images/Margherita_Pizza.jpg" alt="Margherita Pizza" class="menu-image">
+                <span>Margherita Pizza</span>
+                <button onclick="addToCart('Margherita Pizza')">Add to Cart</button>
             </li>
             <li>
-                <img src="https://images.services.kitchenstories.io/z_bWPIhhM6qs38B0E46CRaYs81Q=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2568-photo-final-_0.jpg" alt="Spaghetti Carbonara" class="menu-image">
-                Spaghetti Carbonara
+                <img src="images/Spaghetti_Carbonara.webp" alt="Spaghetti Carbonara" class="menu-image">
+                <span>Spaghetti Carbonara</span>
+                <button onclick="addToCart('Spaghetti Carbonara')">Add to Cart</button>
             </li>
             <li>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToNb4qLVc8li_M2NHBfEl14DaVpUCmplY5lg&s" alt="Ice-Cream" class="menu-image">
-                Ice-Cream
+                <img src="images/Icecream.jpeg" alt="Ice-Cream" class="menu-image">
+                <span>Ice-Cream</span>
+                <button onclick="addToCart('Ice-Cream')">Add to Cart</button>
             </li>
             <li>
-                <img src="https://preppykitchen.com/wp-content/uploads/2022/03/Chocolate-Lava-Cake-Recipe.jpg" alt="Chocolate Lava Cake" class="menu-image">
-                Chocolate Lava Cake
+                <img src="images/Choco-Lava_Cake.jpg" alt="Chocolate Lava Cake" class="menu-image">
+                <span>Chocolate Lava Cake</span>
+                <button onclick="addToCart('Chocolate Lava Cake')">Add to Cart</button>
             </li>
         </ul>
     </section>
     <section id="about">
         <h2>About Us</h2>
-        <p>Epicurean Haven has been serving delicious meals since 2024. Our mission is to bring joy to every plate.</p>
+        <p>Epicurean Haven is more than just a restaurant; it's a culinary adventure. Established in 2024, we are committed to bringing joy to every plate through passion and innovation. Our chefs craft each dish with the finest ingredients and a dash of love, ensuring an unforgettable dining experience.</p>
+        <p>Our mission is simple: to create a haven for food lovers where they can indulge in a delightful array of flavors and culinary artistry. Whether you're here for a casual meal or a special celebration, we aim to provide a warm and inviting atmosphere that feels like home.</p>
+        <p>Join us at Epicurean Haven, where every meal is a celebration of taste, community, and the joy of sharing food.</p>
+        <img src="images/sanji_the_best_chef.webp" alt="Our Chefs" class="about-image">
+        <p><strong>Our Head Chef:</strong> Sanji, the best chef you can get.</p>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
@@ -57,5 +66,6 @@
     <footer>
         <p>&copy; 2024 Epicurean Haven. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
